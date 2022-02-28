@@ -532,6 +532,7 @@ GameObject:
   - component: {fileID: 346954280}
   - component: {fileID: 346954279}
   - component: {fileID: 346954278}
+  - component: {fileID: 346954282}
   m_Layer: 0
   m_Name: EventRaycaster
   m_TagString: Untagged
@@ -626,6 +627,20 @@ Transform:
   m_Father: {fileID: 29263052}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &346954282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346954276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f6f602988f8ad342800d84ab4d54e1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _colorOfMagnite: 0
+  _refToChar: {fileID: 1409425364}
 --- !u!1 &413627906
 GameObject:
   m_ObjectHideFlags: 0
@@ -1682,6 +1697,7 @@ GameObject:
   - component: {fileID: 1337047768}
   - component: {fileID: 1337047767}
   - component: {fileID: 1337047766}
+  - component: {fileID: 1337047770}
   m_Layer: 0
   m_Name: EventRaycaster
   m_TagString: Untagged
@@ -1776,6 +1792,20 @@ Transform:
   m_Father: {fileID: 30547184}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1337047770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337047764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f6f602988f8ad342800d84ab4d54e1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _colorOfMagnite: 1
+  _refToChar: {fileID: 1409425364}
 --- !u!1 &1338023386
 GameObject:
   m_ObjectHideFlags: 0
@@ -1835,6 +1865,8 @@ GameObject:
   - component: {fileID: 1409425361}
   - component: {fileID: 1409425360}
   - component: {fileID: 1409425359}
+  - component: {fileID: 1409425364}
+  - component: {fileID: 1409425363}
   m_Layer: 0
   m_Name: VROrigin
   m_TagString: Untagged
@@ -1902,6 +1934,48 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1409425363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409425358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c1a3dabb20ac924090b51dd8aa5e917, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 10
+  _deadZone: 0.1
+--- !u!114 &1409425364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409425358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a7d7b3e4b94a584da17dc1c2cd058d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _spellDistance: 20
+  _maxMagniteForce: 50
+  _magniteSpell:
+    JointList: []
+    RG: []
+    HighLight: []
+    BlueObj: {fileID: 0}
+    RedObj: {fileID: 0}
+    BluePos: {x: 0, y: 0, z: 0}
+    RedPos: {x: 0, y: 0, z: 0}
+  _blueHolder: {fileID: 0}
+  _redHolder: {fileID: 0}
+  _redMat: {fileID: 0}
+  _blueMat: {fileID: 0}
+  _yellowMat: {fileID: 0}
+  _hlReference: {fileID: 0}
 --- !u!4 &1429623566 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 419526, guid: 8c93af22a072961489d61255c39d9659, type: 3}
@@ -1980,6 +2054,149 @@ PrefabInstance:
       objectReference: {fileID: 55562299}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c93af22a072961489d61255c39d9659, type: 3}
+--- !u!1 &1497775863 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 112326, guid: 8c93af22a072961489d61255c39d9659, type: 3}
+  m_PrefabInstance: {fileID: 1497775862}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1497775864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1497775863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93ab9066e8186884da64ee239717c741, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_combineInputsOperator: 0
+  m_inputs:
+  - viveRole:
+      m_roleTypeFullName: HTC.UnityPlugin.Vive.HandRole
+      m_roleValueName: RightHand
+      m_roleValueInt: 0
+    button: 0
+  m_onVirtualPress:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onVirtualClick:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onVirtualPressDown:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1159776703}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  m_onVirtualPressUp:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1159776703}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 346954282}
+        m_TargetAssemblyTypeName: NikolayTrofimovHTC.MagniteRaycaster, Assembly-CSharp
+        m_MethodName: StartMagnite
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_toggleGameObjectOnVirtualClick: []
+  m_toggleComponentOnVirtualClick: []
+--- !u!114 &1497775865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1497775863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93ab9066e8186884da64ee239717c741, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_combineInputsOperator: 0
+  m_inputs:
+  - viveRole:
+      m_roleTypeFullName: HTC.UnityPlugin.Vive.HandRole
+      m_roleValueName: LeftHand
+      m_roleValueInt: 0
+    button: 0
+  m_onVirtualPress:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onVirtualClick:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onVirtualPressDown:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1151255140}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  m_onVirtualPressUp:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1151255140}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1337047770}
+        m_TargetAssemblyTypeName: NikolayTrofimovHTC.MagniteRaycaster, Assembly-CSharp
+        m_MethodName: StartMagnite
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_toggleGameObjectOnVirtualClick: []
+  m_toggleComponentOnVirtualClick: []
 --- !u!1 &1516565176
 GameObject:
   m_ObjectHideFlags: 0
