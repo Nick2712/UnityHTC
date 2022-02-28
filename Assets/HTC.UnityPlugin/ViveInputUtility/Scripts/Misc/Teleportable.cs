@@ -133,7 +133,7 @@ namespace HTC.UnityPlugin.Vive
         public bool IsAborted { get { return abort; } }
 
         private bool abort;
-        private Coroutine teleportCoroutine;
+        protected Coroutine teleportCoroutine;
 
         public bool IsPrimeryTeleportButtonOn(ControllerButton btn) { return EnumUtils.GetFlag(primaryTeleportButton, (int)btn); }
 
@@ -274,7 +274,7 @@ namespace HTC.UnityPlugin.Vive
         private bool m_steamVRFadeInitialized;
         private bool m_isSteamVRFading;
 
-        public IEnumerator StartTeleport(RaycastResult hitResult, Vector3 position, Quaternion rotation, float delay)
+        public virtual IEnumerator StartTeleport(RaycastResult hitResult, Vector3 position, Quaternion rotation, float delay)
         {
             if (useSteamVRFade && VRModule.activeModule == VRModuleActiveEnum.SteamVR && !Mathf.Approximately(delay, 0f))
             {
@@ -345,7 +345,7 @@ namespace HTC.UnityPlugin.Vive
             }
         }
 #else
-        public IEnumerator StartTeleport(RaycastResult hitResult, Vector3 position, Quaternion rotation, float delay)
+        public virtual IEnumerator StartTeleport(RaycastResult hitResult, Vector3 position, Quaternion rotation, float delay)
         {
             if (delay > 0) { yield return new WaitForSeconds(delay); }
 
